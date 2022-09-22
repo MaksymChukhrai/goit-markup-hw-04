@@ -78,11 +78,12 @@ img {
 .section-clients{
   margin-right: auto;
   margin-left: auto;
-padding-top: 94px;
+padding-top: 91px;
 padding-bottom: 94px;
 }
 
 .container,
+.container-footer,
 .container-header,
 .container-clients {
   max-width: 1200px;
@@ -93,6 +94,10 @@ padding-bottom: 94px;
 }
 .container-header {
   display: flex;
+}
+.container-footer{
+  display:flex;
+  align-items: baseline;
 }
 
 .links:hover,
@@ -189,7 +194,7 @@ padding-bottom: 94px;
   display: flex;
   align-items: center;
   justify-content: center;
-    list-style: none;
+  list-style: none;
 }
 
 .social-item {
@@ -304,7 +309,6 @@ padding-bottom: 94px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-
   color: var(--primary-text-color);
 }
 .job-title {
@@ -312,7 +316,6 @@ padding-bottom: 94px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--primary-grey-color);
 }
 /* Постійні клієнти  */
@@ -322,6 +325,7 @@ padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;  
   height: 92px;
+
 }
 
 .client-card {
@@ -572,4 +576,29 @@ fill:currentColor;
   width:70px;
 }
 /* прописать інші класи svg */
-
+.social-footer {
+  width: 206px;
+  height: 80px;
+  margin-right: 0;
+  margin-left: 156px;
+  
+  }
+  .social-list {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .title-net {
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
