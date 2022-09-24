@@ -19,7 +19,7 @@
   rgba(0, 0, 0, 0.08), 0px 2px 2px
    rgba(0, 0, 0, 0.12);
   --card-projects-portfolio:0px 4px 4px rgba(0, 0, 0, 0.25);
-  --project-item-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  --project-item-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -234,7 +234,7 @@ padding-bottom: 94px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  fill: var(--primary-white-color);
+  /* fill: var(--primary-white-color); */
 }
 
 .social-link:hover,
@@ -246,7 +246,12 @@ padding-bottom: 94px;
 .social-icon {
   width: 20px;
   height: 20px;
-  fill:currentColor;
+  fill:var(--primary-icon-color);
+}
+.footer-social-icon{
+  width: 20px;
+  height: 20px;
+  fill:var(--primary-white-color);
 }
 
 .job {
