@@ -73,7 +73,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-  url(../images/overlay.jpg);
+  url(../Images/overlay.jpg);
 }
 .section-qualities {
   margin-right: auto;
