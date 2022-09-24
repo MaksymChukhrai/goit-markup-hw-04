@@ -1,6 +1,7 @@
 :root {
   --primary-black-color: #000000;
   --hero-black-color: #2f303a;
+  --hero-grey-color:#C4C4C4;
   --primary-text-color: #212121;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -18,7 +19,10 @@
   rgba(0, 0, 0, 0.08), 0px 2px 2px
    rgba(0, 0, 0, 0.12);
   --card-projects-portfolio:0px 4px 4px rgba(0, 0, 0, 0.25);
+  --project-item-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+
 body {
   font-family: Roboto, sans-serif, Raleway;
   background-color: var(--primary-white-color);
@@ -61,7 +65,7 @@ img {
 }
 
 .section-hero {
-  background: var(--hero-black-color);
+  background: var(--hero-grey-color);
   text-align: center;
   max-width: 1600px;
   padding-bottom: 200px;
@@ -116,12 +120,24 @@ padding-bottom: 94px;
 .contacts:focus {
   color: var(--accent-color);
 }
+.tel-icon:hover,
+.tel-icon:focus{
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+.mail-icon:hover,
+.mail-icon:focus{
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
 
 .links {
   color: var(--primary-text-color);
 }
 .contacts {
   color: var(--primary-grey-color);
+  display:inline-flex;
+  align-items: center;
 }
 .link-current {
   color: var(--accent-color);
@@ -146,7 +162,8 @@ padding-bottom: 94px;
 }
 
 .links,
-.contacts-item,
+.contacts,
+/* .contacts-item, */
 .link-current {
   font-weight: 500;
   font-size: 14px;
@@ -200,12 +217,6 @@ padding-bottom: 94px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
 
 .social-item {
   margin-right: 10px;
@@ -223,7 +234,7 @@ padding-bottom: 94px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  fill: var(--primary-icon-color);
+  fill: var(--primary-white-color);
 }
 
 .social-link:hover,
@@ -235,7 +246,7 @@ padding-bottom: 94px;
 .social-icon {
   width: 20px;
   height: 20px;
-  /* fill:#ffff; */
+  fill:currentColor;
 }
 
 .job {
@@ -343,10 +354,13 @@ padding-bottom: 94px;
   margin-right: 0;
   margin-left: 30px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  /* border: 1px solid #AFB1B8; */
   border-radius: 4px;
-  align-items: center;
+
   justify-content: center; 
+  fill:currentColor;
+  border: 1px solid var( --primary-icon-color);
+border-radius: 4px;
 }
 
 .client-card:nth-child(1) {
@@ -356,8 +370,9 @@ padding-bottom: 94px;
 .client-card:hover,
 .client-card:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: #2196F3;
+  /* fill:currentColor; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .client-link {
@@ -365,6 +380,8 @@ padding-bottom: 94px;
   align-items: center;
   color: currentColor;
   text-decoration: none;
+ 
+  fill: var(--primary-icon-color);
 }
 
 .client-icon {
@@ -392,16 +409,6 @@ padding-bottom: 94px;
   color: var(--primary-white-color);
 }
 
-.mail-contacts {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .tel:hover,
 .tel:focus {
@@ -489,6 +496,9 @@ box-shadow: var(--card-projects-portfolio);
 .project-item{
   display: block;
   text-decoration: none;
+}
+.project-link{
+  box-shadow: var(--project-item-shadow);
 }
 
 .nav-buttons :hover,
@@ -582,7 +592,12 @@ text-decoration: none;
 .mail-icon,
 .tel-icon{
  margin-right: 10px;
-fill:currentColor;
+ align-items: center;
+}
+
+.mail-icon:hover,
+.mail-icon:focus{
+  fill:var(--accent-color);
 }
 .icon-antenna,
 .icon-clock,
@@ -593,22 +608,17 @@ width:70px;
 }
 
 .social-footer {
-  width: 206px;
-  height: 80px;
-  margin-right: 0;
-  margin-left: 156px;
-  
-  }
-  .social-list {
+   margin-left: 70px;
+}
+
+.social-list {
     display: flex;
-    margin-left: 0;
-    margin-right: 0;
     list-style: none;
-    align-items: center;
     justify-content: center;
-   
-  }
-  .title-net {
+    margin-top: 20px;
+}
+ 
+.title-net {
     padding: 0;
     margin-bottom: 20px;
     font-weight: 700;
