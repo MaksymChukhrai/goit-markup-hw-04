@@ -233,6 +233,7 @@ a.contacts:focus {
   justify-content: center;
   border-radius: 50%;
   fill: var(--primary-icon-color);
+  background-color:rgba(255, 255, 255, 0.1); 
 }
 /* .social-link :hover,
 .social-link :focus {
@@ -378,7 +379,7 @@ a.contacts:focus {
 } */
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--accent-color);
+  border-color: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
