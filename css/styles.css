@@ -217,7 +217,8 @@ a.contacts:focus {
   padding-bottom: 30px;
 }
 
-.social-item {
+.social-item,
+.footer-social-item {
   margin-right: 10px;
 }
 
@@ -233,6 +234,16 @@ a.contacts:focus {
   justify-content: center;
   border-radius: 50%;
   fill: var(--primary-icon-color);
+  
+}
+.footer-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--primary-white-color);
   background-color:rgba(255, 255, 255, 0.1); 
 }
 /* .social-link :hover,
@@ -246,15 +257,20 @@ a.contacts:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
+.footer-social-item :hover,
+.footer-social-item :focus {
+  background-color: var(--accent-color);
+}
 
 .social-icon {
   width: 20px;
   height: 20px;
+
 }
 .footer-social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--primary-white-color);
+
 }
 
 .job {
@@ -379,7 +395,7 @@ a.contacts:focus {
 } */
 .client-link:hover,
 .client-link:focus {
-  border-color: 1px solid var(--accent-color);
+  border-color:var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -625,6 +641,7 @@ a.contacts:focus {
   display: flex;
   list-style: none;
   justify-content: center;
+
 }
 .social-list {
   margin-top: 16px;
